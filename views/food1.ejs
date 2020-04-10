@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food</title>
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+</head>
+<body>
+    <%- include layout2 %>
+    <div class="container">
+        <%- messages() %>
+        <h2 align="center">Order</h2>
+        <% if(locals.errors) { %>
+        <ul class="alert alert-danger">
+            <% Object.values(errors).forEach(function(error) { %>
+                <li><%= error.msg %></li>
+            <% }) %>
+        </ul>
+        <% } %>
+        <form action="/first/transactions1" method="post" >
+            <div class="form-group">
+                <label for="">Food's Name</label>
+                <input type="text" name="name" id="" value="" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Cost</label>
+                <input type="number" name="cost" class="form-control" id="" min="300">
+            </div>
+            <div class="form-group">
+                <label for="">Amount</label>
+                <input type="number" name="amount" class="form-control" id="" max="3">
+            </div>
+            <input type="submit" value="submit" class="btn btn-primary">
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -2,11 +2,11 @@ var express = require('express');
 var router = express.Router();
 const { check, validationResult } = require('express-validator');
 
-const db = require('monk')("localhost:27017/TutorialDB")
+const db = require('monk')("mongodb+srv://Prince:Prince55@cluster0-ujsfk.gcp.mongodb.net/MyApp?retryWrites=true&w=majority")
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-    req.flash("success", "Already saved");
+    //req.flash("success", "Already saved");
     res.render("blog");
 });
 
@@ -37,7 +37,7 @@ router.post('/add', [
                 if(err){
                     res.send(err);
                 }else{
-                    req.flash("success", "Already saved");
+                    //req.flash("success", "Already saved");
                     res.location('/blog/add');
                     res.redirect('/blog/add');
                 } 

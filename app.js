@@ -5,9 +5,23 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var index2Router = require('./routes/index2');
+// var usersRouter = require('./routes/users');
 var productRouter = require('./routes/products');
 var blogRouter = require('./routes/blog');
+var registerRouter = require('./routes/register');
+var aboutRouter = require('./routes/about');
+var about2Router = require('./routes/about2');
+var orderRouter = require('./routes/order');
+var order2Router = require('./routes/order2');
+var signinRouter = require('./routes/signin');
+var regis2Router = require('./routes2/transactionRoutesV22')
+var memberRouter = require('./routes/member');
+// var meRouter = require('./routes/me');
+var logoutRouter = require('./routes/logout');
+var firstRouter = require('./routes/first');
+var riderRouter = require('./routes/rider');
+var failedRouter = require('./routes/failed');
 
 var app = express();
 var session = require('express-session')
@@ -37,9 +51,23 @@ app.use(function (req, res, next) {
 });
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/index2', index2Router);
+// app.use('/users', usersRouter);
 app.use('/product', productRouter);
 app.use('/blog', blogRouter);
+app.use('/register', registerRouter);
+app.use('/about', aboutRouter);
+app.use('/about2', about2Router);
+app.use('/order', orderRouter);
+app.use('/order2', order2Router);
+app.use('/signin', signinRouter);
+app.use('/transactionRoutesV22',regis2Router);
+app.use('/member',memberRouter);
+// app.use('/me',meRouter);
+app.use('/logout',logoutRouter);
+app.use('/first',firstRouter);
+app.use('/rider',riderRouter);
+app.use('/failed',failedRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,0 +1,307 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;   
+    
+}
+ิbody{
+    perspective: 1px;
+    width: 100%;
+    height: 100%;  
+    line-height: 1.6em;
+    letter-spacing: 2px;
+    text-align: left;
+    font-size: 16px;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.0)), url(../img/home/02.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+header ul{
+    float: right;
+    list-style-type:none ;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    padding :5px 20px;
+    border:1px solid white transparent;
+    transition: 0.6s ease;
+}
+header ul li a:hover{
+    background-color: #fff;
+    color: #000000; 
+}
+header ul li.active a{
+    background-color: #fff;
+    color: #000000;
+}
+.main{
+    padding: 30px;
+    max-width:1200px;
+    margin:auto;
+}
+.main  img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+.main img:hover  {
+    transform: scale(1.2);
+} 
+.title{
+    text-align: center;
+    background-color: #dd720b;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.title h1{
+    color: black;
+    font-size: 60px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}.title h2{
+    color: black;
+    font-size: 30px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contact{
+    color: black;
+    position: absolute;
+    text-align: center;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.contact h3{
+    color: gray;
+    padding-top: 15px;
+}
+.contact h4{
+    color: gray;
+    line-height:1.6em;
+}
+ 
+#section1{
+    background-color: whitesmoke;
+    color: black;
+    width: 30%;
+    box-sizing: border-box;
+    float: left;
+    height: 525px;
+    padding-right:120px;
+    margin-bottom: 30px;}
+.box{
+    width: 450px;
+    padding:70px;
+    margin-left: 50%;
+    transform: translate(-50%,-10%);
+    font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 110px;
+    padding-top: 100px;
+}
+.box-img{
+    width:200px;
+    height: auto;
+    margin-left: 25%;
+}
+.box h1{
+    color: #800000;
+    font-size: 60px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    padding: 20px;
+}
+.box p{
+    text-indent:30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#section2{
+    left: 300px;
+    background-color: red;
+    color: black;
+    width: 25%;
+    box-sizing: border-box;
+    float: right;
+    height: 200px;
+}
+.box2{
+    width: 500px;
+    padding:0;
+    font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    line-height: 1.6em;
+    letter-spacing: 0.5em;
+}
+.box2 h1{
+    color: #800000;
+    font-size: 60px;
+    letter-spacing: 4px;
+    font-weight:100;
+    padding: 20px;
+}
+.box2 h2{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight:100;
+    padding: 20px;
+}
+.box2 p{
+    text-indent:30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: left;
+    padding: 20px;
+}
+#section3{
+    padding-left: 200px;
+    color: white;
+    width: 100%;
+    background-color:#33FF48;
+}
+.box3  img{
+    padding: 50px;
+    padding-left: 650px;
+}
+.box3 .a img{
+    padding: 80px;
+    padding-left: 300px;
+}
+.box3 h1{
+    font-size: 60px;
+    letter-spacing: 4px;
+    font-weight:100;
+    text-align: center;
+}
+
+#section4{
+    top: 90%;
+    margin-top: 30px;
+    background-color: #2994f8;
+    color: #ffff;
+}
+#section5{
+    top: 90%;
+    margin-top: 30px;
+    background-color: fuchsia;
+    color: #800000;
+}
+#section4 img{
+    padding: 30px;
+    padding-left: 650px;
+}
+#section4 h1{
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight:100;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+section4 p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #800000;
+}
+.box4 .row1{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    height: 300px;
+    background-color: white;
+    color: black;
+}
+.box4 .row2{
+    width: 50%;
+    box-sizing: border-box;
+    float: right;
+    height: 300px;
+    background-color: white;
+    color: black;
+}
+.box4 h1{
+    font-size: 60px;
+}
+.box4 h3{
+    padding-left: 200px;
+    color: #81b5e6;
+    font-size: 30px;
+}
+.box4 p{
+    font-size: 20px;
+    padding-left: 220px;
+    padding-bottom: 2px;
+}
+.box4  h6{
+    font-size: 15px;
+    padding-left: 250px;
+    padding-bottom: 2px;
+}
+
+#section5{
+    background-color:white;
+    color: black;
+}
+
+#section5 img{
+    padding-left: 650px;
+}
+#section5 h1{
+    color: #800000;
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight:100;
+    text-align: center;
+    padding: 20px;
+}
+
+#section5 p{
+    padding: 20px;
+    padding-left: 150px;
+    padding-bottom: 150px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footer{
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+#footer a{
+    text-decoration: none;
+    color:blue;
+}
+#footer a:hover{
+    color: red;
+}
+
+#sectionimg{
+    
+    background-image: url('https://hiptastes.com/wp-content/uploads/2019/11/getmedia_ae51f174-984f-4a70-ad3d-3f6b517b6da1_fruits-vegetables-healthy-fats.jpg_width1180height524ext.jpg');
+    color: white;
+    
+    
+}
+.boximg {
+
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 250px;
+    padding-bottom: 2px;
+}
+#borderimg {
+    border-image: url(border.png) 30 round;
+  }
