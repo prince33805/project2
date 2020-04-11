@@ -22,6 +22,9 @@ var logoutRouter = require('./routes/logout');
 var firstRouter = require('./routes/first');
 var riderRouter = require('./routes/rider');
 var failedRouter = require('./routes/failed');
+var regissuccessRouter = require('./routes/regissuccess');
+var regisfailedRouter = require('./routes/regisfailed');
+
 
 var app = express();
 var session = require('express-session')
@@ -68,6 +71,8 @@ app.use('/logout',logoutRouter);
 app.use('/first',firstRouter);
 app.use('/rider',riderRouter);
 app.use('/failed',failedRouter);
+app.use('/regissuccess',regissuccessRouter);
+app.use('/regisfailed',regisfailedRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

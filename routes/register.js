@@ -86,10 +86,17 @@ router.post('/user', async (req,res) => {
       const token = await user.generateAuthToken() 
       //res.status(201).json({ msg : 'add user successfull', user , token})
       // alert("Register Successful");
-      res.location('/');
-      res.redirect('/');
+
+      //register succesful
+      res.location('/regissuccess');
+      res.redirect('/regissuccess');
+
     } catch (error) {
-      res.status(400).json({ error : error.msg})
+      
+      //register failed
+      res.location('/regisfailed');
+      res.redirect('/regisfailed');
+      // res.status(400).json({ error : error.msg})
     }
 })
 
